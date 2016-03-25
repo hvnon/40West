@@ -1,0 +1,99 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.NoTitle" parent="@android:style/Theme.Light.NoTitleBar"></style>
+
+    <style name="AppTheme.Title" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Activity with ActionBar-->
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/main_color_500</item>
+        <item name="titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBarStyle.TitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoShadow" parent="@style/AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.NoShadow</item>
+    </style>
+
+    <style name="ActionBarStyle.NoShadow" parent="@style/ActionBarStyle">
+        <item name="android:background">@color/main_color_600</item>
+        <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+    </style>
+
+    <!--Dashboard button style-->
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- ListView related themes -->
+    <style name="ListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/main_color_200</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+    <!-- ListView related themes end here -->
+
+    <!-- Ripple related styles -->
+    <style name="RippleStyle">
+        <item name="rippleOverlay">true</item>
+        <item name="rippleColor">@color/main_color_300</item>
+        <item name="rippleColour">@color/main_color_300</item>
+        <item name="rippleAlpha">0.7</item>
+        <item name="rippleDimension">45dp</item>
+        <item name="rippleHover">true</item>
+        <item name="rippleDuration">200</item>
+        <item name="rippleFadeDuration">50</item>
+        <item name="rippleBackground">@android:color/transparent</item>
+        <item name="rippleDelayClick">true</item>
+        <item name="ripplePersistent">false</item>
+        <item name="rippleInAdapter">false</item>
+    </style>
+    <!-- Ripple related styles end here -->
+
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/cd_main_image</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <!-- <item name="android:paddingBottom">8dp</item> -->
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:cropToPadding">true</item>
+    </style>
+</resources>

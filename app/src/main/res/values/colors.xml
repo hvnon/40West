@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="primary">@color/colorPrimary</color>
+    <color name="primary_dark">@color/colorPrimaryDark</color>
+    <color name="primary_light">#F5F5F5</color>
+    <color name="accent">@color/colorAccent</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="main_color_500">@color/material_grey_500</color>
+    <color name="main_color_50">@color/material_grey_50</color>
+    <color name="main_color_100">@color/material_grey_100</color>
+    <color name="main_color_200">@color/material_grey_200</color>
+    <color name="main_color_300">@color/material_grey_300</color>
+    <color name="main_color_400">@color/material_grey_400</color>
+    <color name="main_color_600">@color/material_grey_600</color>
+    <color name="main_color_700">@color/material_grey_700</color>
+    <color name="main_color_800">@color/material_grey_800</color>
+    <color name="main_color_900">@color/material_grey_900</color>
+    <color name="main_color_A100">@color/material_light_yellow_A100</color>
+    <color name="main_color_A200">@color/material_light_yellow_A200</color>
+    <color name="main_color_A400">@color/material_light_yellow_A400</color>
+
+    <color name="main_color_grey_500">@color/material_grey_500</color>
+    <color name="main_color_grey_50">@color/material_grey_50</color>
+    <color name="main_color_grey_100">@color/material_grey_100</color>
+    <color name="main_color_grey_200">@color/material_grey_200</color>
+    <color name="main_color_grey_300">@color/material_grey_300</color>
+    <color name="main_color_grey_400">@color/material_grey_400</color>
+    <color name="main_color_grey_600">@color/material_grey_600</color>
+    <color name="main_color_grey_700">@color/material_grey_700</color>
+    <color name="main_color_grey_800">@color/material_grey_800</color>
+    <color name="main_color_grey_900">@color/material_grey_900</color>
+</resources>

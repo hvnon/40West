@@ -1,0 +1,147 @@
+<resources>
+
+    <string name="fontello_logo">&#xe8ad;</string>
+    <string name="fontello_search">&#xea01;</string>
+    <string name="fontello_x_mark">&#xe887;</string>
+    <string name="fontello_x_mark_masked">&#xe885;</string>
+    <string name="fontello_microfon">&#xea18;</string>
+    <string name="fontello_user">&#xe800;</string>
+    <string name="fontello_password">&#xe9df;</string>
+    <string name="fontello_upload">&#xeb30;</string>
+    <string name="fontello_play">&#xea7d;</string>
+    <string name="fontello_heart_empty">&#xe9b5;</string>
+    <string name="fontello_heart_full">&#xe9b6;</string>
+    <string name="fontello_drag_and_drop">&#xe988;</string>
+
+    <!-- Material Design Icons -->
+    <!--https://design.google.com/icons/-->
+    <string name="material_icon_account">&#xe800;</string>
+    <string name="material_icon_account_multiple">&#xe8dc;</string>
+    <string name="material_icon_bookmark">&#xe921;</string>
+    <string name="material_icon_bike">&#xe915;</string>
+    <string name="material_icon_box_full">&#xe86b;</string>
+    <string name="material_icon_clock">&#xe881;</string>
+    <string name="material_icon_check">&#xe867;</string>
+    <string name="material_icon_checked_full">&#xe86f;</string>
+    <string name="material_icon_check_empty">&#xe86a;</string>
+    <string name="material_icon_check_full">&#xe86e;</string>
+    <string name="material_icon_city">&#xe878;</string>
+    <string name="material_icon_cart">&#xe857;</string>
+    <string name="material_icon_chevron_down">&#xe874;</string>
+    <string name="material_icon_chevron_up">&#xe877;</string>
+    <string name="material_icon_date">&#xe848;</string>
+    <string name="material_icon_drink">&#xea08;</string>
+    <string name="material_icon_dollar">&#xe892;</string>
+    <string name="material_icon_email">&#xe99c;</string>
+    <string name="material_icon_eat">&#xeac6;</string>
+    <string name="material_icon_friends">&#xe8d5;</string>
+    <string name="material_icon_flag">&#xe96a;</string>
+    <string name="material_icon_favorite">&#xe9b6;</string>
+    <string name="material_icon_go">&#xea04;</string>
+    <string name="material_icon_go_left">&#xe875;</string>
+    <string name="material_icon_go_right">&#xe876;</string>
+    <string name="material_icon_home_variant">&#xe9bd;</string>
+    <string name="material_icon_home">&#xe9be;</string>
+    <string name="material_icon_hotels">&#xeae3;</string>
+    <string name="material_icon_heart_outline">&#xe9b3;</string>
+    <string name="material_icon_headphones">&#xe9b1;</string>
+    <string name="material_icon_human">&#xe9c5;</string>
+    <string name="material_icon_headline">&#xeb40;</string>
+    <string name="material_icon_image_box">&#xe952;</string>
+    <string name="material_icon_info">&#xe9d4;</string>
+    <string name="material_icon_info_box">&#xe896;</string>
+    <string name="material_icon_like">&#xeb03;</string>
+    <string name="material_icon_line_spacing">&#xe988;</string>
+    <string name="material_icon_note">&#xea23;</string>
+    <string name="material_icon_message">&#xea12;</string>
+    <string name="material_icon_play">&#xe831;</string>
+    <string name="material_icon_play_single">&#xea7d;</string>
+    <string name="material_icon_play_square">&#xea7a;</string>
+    <string name="material_icon_play_circle">&#xea7b;</string>
+    <string name="material_icon_play_outline">&#xea7b;</string>
+    <string name="material_icon_pig">&#xea72;</string>
+    <string name="material_icon_password">&#xe9fa;</string>
+    <string name="material_icon_plus_box">&#xea7f;</string>
+    <string name="material_icon_party">&#xe937;</string>
+    <string name="material_icon_point_empty">&#xe868;</string>
+    <string name="material_icon_point_full">&#xe869;</string>
+    <string name="material_icon_star_outline">&#xeade;</string>
+    <string name="material_icon_star_half">&#xeadd;</string>
+    <string name="material_icon_star">&#xeadf;</string>
+    <string name="material_icon_share">&#xeac0;</string>
+    <string name="material_icon_skip_next">&#xeaca;</string>
+    <string name="material_icon_skip_previous">&#xeacb;</string>
+    <string name="material_icon_soundcloud">&#xead3;</string>
+    <string name="material_icon_statistics">&#xea87;</string>
+    <string name="material_icon_shop">&#xe858;</string>
+    <string name="material_icon_sleep">&#xe9c2;</string>
+    <string name="material_icon_settings">&#xeabe;</string>
+    <string name="material_icon_state">&#xeb62;</string>
+    <string name="material_icon_to_left">&#xe876;</string>
+    <string name="material_icon_video">&#xeb39;</string>
+    <string name="material_icon_undo">&#xeb2c;</string>
+    <string name="material_icon_unfold_more">&#xeb2f;</string>
+    <string name="material_icon_w_shop">&#xeb4f;</string>
+    <string name="material_icon_cloud_univ_first">&#xeb54;</string>
+    <string name="material_icon_cloud_univ_second">&#xeb5a;</string>
+    <string name="material_icon_cloud_univ_third">&#xeb55;</string>
+
+    <string name="app_name">40West</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="metaioSDKSignature">ROc5VM4O0P350/9gBOoYfl8Agm2KMcXWAkoXd82y8QA=</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnClose">close</string>
+    <string name="btnHelp">Help</string>
+    <string name="qr_code_label">Last QR code read:</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="btnOpenFurnitureActivity">Open AR</string>
+    <string name="qr_scanner_activity">40West Scanner</string>
+    <string name="saved_ar_activity">SavedAR Gallery</string>
+    <string name="offline_catalogs_activity">Offline Catalogs</string>
+    <string name="deals_activity">Deals</string>
+    <string name="store_finder_activity">Stores Finder</string>
+    <string name="store_detail_activity">Store Details</string>
+
+    <!--About-->
+    <!-- Shown in the 'About' window of the app. -->
+    <string name="about_main"><![CDATA[
+        <b>40West</b><br>
+        Version %s
+    ]]></string>
+
+    <!-- Shown as a link in the About screen of the app; user can click to see the Terms of Services. -->
+    <string name="about_terms">Terms of Service</string>
+
+    <!-- Shown as a link in the About screen of the app; user can click to see the Privacy Policy. -->
+    <string name="about_privacy_policy">Privacy Policy</string>
+
+    <!-- Shown as a link in the About screen of the app; user can click to see the EULA. -->
+    <string name="about_eula">End User License Agreement</string>
+
+    <!-- Shown as a link in the About screen of the app; user can click it to see the licenses. -->
+    <string name="about_licenses">Open Source Licenses</string>
+
+    <!-- A single button shown on informative popups, like EULA, open source licenses and About -->
+    <string name="ok">OK</string>
+    <!--EndAbout-->
+
+    <!-- For Update -->
+    <string name="confirm_exit">Press Back button again to exit</string>
+
+    <!--Drawer Menu-->
+    <string name="drawer_home">Home</string>
+    <string name="drawer_category">Categories</string>
+    <string name="drawer_deal">Deals</string>
+    <string name="drawer_store_finder">Stores</string>
+    <string name="drawer_cart">My cart</string>
+    <string name="drawer_wishlist">My wishlist</string>
+    <string name="drawer_account">My Account</string>
+    <string name="drawer_setting">Settings</string>
+    <string name="drawer_about">Abouts</string>
+
+    <string name="cd_main_image">main image</string>
+    <string name="title_activity_offline_catalog">OfflineCatalogActivity</string>
+    <string name="title_activity_store_detail">StoreDetailActivity</string>
+</resources>
