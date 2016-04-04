@@ -80,7 +80,7 @@ public class MainActivity extends ActionBarActivity {
         mDrawerList.setAdapter(new DrawerAdapter(this, mDrawerItems, true));
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
         mDrawerList.setBackgroundResource(R.drawable.gradient_drawer_background_shop);
-        mDrawerList.getLayoutParams().width = (int) getResources().getDimension(R.dimen.drawer_width_shop);
+        mDrawerList.getLayoutParams().width = (int) getResources().getDimension(R.dimen.drawer_width);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
