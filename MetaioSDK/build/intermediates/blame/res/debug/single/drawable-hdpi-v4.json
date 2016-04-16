@@ -36,12 +36,12 @@
         "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-hdpi\\web_back_dis.png"
     },
     {
-        "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\star_act.png",
-        "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-hdpi\\star_act.png"
-    },
-    {
         "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\star_dis.png",
         "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-hdpi\\star_dis.png"
+    },
+    {
+        "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\star_act.png",
+        "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-hdpi\\star_act.png"
     },
     {
         "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\web_back.png",

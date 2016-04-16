@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.as.fortywest.R;
@@ -45,6 +46,8 @@ public class StoreFinderAdapter extends BaseAdapter {
 			holder = new ViewHolder();
 			holder.storeNameText = (TextView) convertView.findViewById(R.id.store_name_text);
 			holder.storeDistance = (TextView) convertView.findViewById(R.id.store_distance);
+			holder.storeImage = (ImageView) convertView.findViewById(R.id.image);
+
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
@@ -53,10 +56,12 @@ public class StoreFinderAdapter extends BaseAdapter {
 		StoreModel store = mStores.get(position);
 		holder.storeNameText.setText(store.getName());
 		holder.storeDistance.setText(store.getDistance());
+		holder.storeImage.setImageResource(store.getImage());
 		return convertView;
 	}
 	
 	private static class ViewHolder {
+		public ImageView storeImage;
 		public TextView storeNameText;
 		public TextView storeDistance;
 	}

@@ -20,6 +20,7 @@ public class PDFViewActivity extends AppCompatActivity {
     private PDFView pdfView;
     private Integer pageNumber = 1;
     private String pdfName;
+    private String pdfFileName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +33,8 @@ public class PDFViewActivity extends AppCompatActivity {
 
         if(data != null){
             OfflineCatalogModal catalog = data.getParcelable(OfflineCatalogFragment.TAG_OFFLINE_CATALOG_OBJECT_PARCELABLE);
-            pdfName = catalog.getmAssetName();
-
+            pdfName = catalog.getmName();
+            pdfFileName = catalog.getmAssetName();
             pdfView = (PDFView) findViewById(R.id.pdfview);
             OnPageChangeListener onPageChangeListener = new OnPageChangeListener() {
                 @Override
@@ -43,7 +44,7 @@ public class PDFViewActivity extends AppCompatActivity {
                 }
             };
 
-            pdfView.fromAsset(pdfName)
+            pdfView.fromAsset(pdfFileName)
                     .defaultPage(pageNumber)
                     .onPageChange(onPageChangeListener)
                     .load();

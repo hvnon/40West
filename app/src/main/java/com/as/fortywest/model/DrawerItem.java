@@ -7,6 +7,7 @@ public class DrawerItem {
 	public static final int DRAWER_ITEM_TAG_SETTING = 12;
 
 
+	public static final int DRAWER_ITEM_TAG_ONLINE_CATEGORY = 26;
 	public static final int DRAWER_ITEM_TAG_OFFLINE_CATEGORY = 20;
 	public static final int DRAWER_ITEM_TAG_DEAL = 21;
 	public static final int DRAWER_ITEM_TAG_CART = 22;

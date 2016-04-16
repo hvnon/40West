@@ -1,7 +1,6 @@
 package com.as.fortywest;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +9,6 @@ import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -20,10 +18,8 @@ import android.widget.Toast;
 
 import com.as.fortywest.adapter.SearchAdapter;
 import com.as.fortywest.adapter.StoreFinderAdapter;
-import com.as.fortywest.model.DummyModel;
-import com.as.fortywest.model.OfflineCatalogModal;
 import com.as.fortywest.model.StoreModel;
-import com.as.fortywest.util.DummyContent;
+import com.as.fortywest.dummy.DummyContent;
 
 import java.util.ArrayList;
 

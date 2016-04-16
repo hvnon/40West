@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 import com.as.fortywest.R;
 import com.as.fortywest.adapter.SearchAdapter;
-import com.as.fortywest.model.DummyModel;
-import com.as.fortywest.util.DummyContent;
+import com.as.fortywest.dummy.DummyModel;
+import com.as.fortywest.dummy.DummyContent;
 import java.util.ArrayList;
 
 public class StoreLocatorFragment extends Fragment implements OnClickListener {

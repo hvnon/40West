@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import com.as.fortywest.adapter.ARImageGalleryAdapter;
 import com.as.fortywest.model.ARImageGalleryModel;
-import com.as.fortywest.util.DummyContent;
+import com.as.fortywest.dummy.DummyContent;
 
 import java.util.ArrayList;
 

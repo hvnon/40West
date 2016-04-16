@@ -14,10 +14,9 @@ import com.as.fortywest.PDFViewActivity;
 import com.as.fortywest.R;
 import com.as.fortywest.adapter.OfflineCatalogAdapter;
 import com.as.fortywest.model.OfflineCatalogModal;
-import com.as.fortywest.util.DummyContent;
+import com.as.fortywest.dummy.DummyContent;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class OfflineCatalogFragment extends Fragment implements OnItemClickListener {
 	public static String TAG_OFFLINE_CATALOG_OBJECT_PARCELABLE = "Catalog_Objects";
@@ -35,7 +34,7 @@ public class OfflineCatalogFragment extends Fragment implements OnItemClickListe
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_left_menus,
+		View rootView = inflater.inflate(R.layout.fragment_offline_catalog,
 				container, false);
 
 		mOfflineCatalogs = DummyContent.getDummyOfflineCatalogList();

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/bottomBarItemFavorite"
+    android:icon="@drawable/ic_action_grade"
+    android:title="Favorite" />
+<item
+    android:id="@+id/bottomBarItemShop"
+    android:icon="@drawable/ic_action_store"
+    android:title="Stores" />
+<item
+    android:id="@+id/bottomBarItemVR"
+    android:icon="@drawable/ic_action_vr"
+    android:title="View VR" />
+<item
+    android:id="@+id/bottomBarItemImage"
+    android:icon="@drawable/ic_social_party_mode"
+    android:title="View AR" />
+<item
+    android:id="@+id/bottomBarItemCart"
+    android:icon="@drawable/ic_action_add_shopping_cart"
+    android:title="Cart" />
+</menu>

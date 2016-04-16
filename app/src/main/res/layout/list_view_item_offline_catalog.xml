@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.as.fortywest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:background="@color/white"
+                android:contentDescription="@string/cd_main_image"
+                android:minHeight="96dp"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:background="@color/main_color_grey_50"
+            android:orientation="vertical" >
+            <com.as.fortywest.view.MaterialRippleLayout
+                style="@style/RippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                app:rippleDelayClick="false"
+                app:rippleInAdapter="true" >
+                <com.as.fortywest.font.RobotoTextView
+                    android:id="@+id/title"
+                    style="@style/TextViewAppearance.Caption1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/main_color_grey_800"
+                    android:textSize="16sp"
+                    app:typeface="robotoLight" />
+            </com.as.fortywest.view.MaterialRippleLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_color_grey_400" />
+
+</LinearLayout>

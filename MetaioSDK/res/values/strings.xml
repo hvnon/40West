@@ -141,35 +141,35 @@
     <string name="BTN_VIEW_IMAGE">View Image</string>
     <!-- Yes button text -->
     <string name="BTN_YES">Yes</string>
-    <!-- Channel category (Banking) -->
+    <!-- Channel productCategory (Banking) -->
     <string name="CATEGORY_BANKING">Banking</string>
-    <!-- Channel category (culture) -->
+    <!-- Channel productCategory (culture) -->
     <string name="CATEGORY_CULTURE">Culture</string>
-    <!-- Channel category (Favorites) -->
+    <!-- Channel productCategory (Favorites) -->
     <string name="CATEGORY_FAVORITES">Favorites</string>
-    <!-- Channel category (Featured) -->
+    <!-- Channel productCategory (Featured) -->
     <string name="CATEGORY_FEATURED">Featured</string>
-    <!-- Channel category (Food) -->
+    <!-- Channel productCategory (Food) -->
     <string name="CATEGORY_FOOD">Food</string>
-    <!-- Channel category (Friends' channels) -->
+    <!-- Channel productCategory (Friends' channels) -->
     <string name="CATEGORY_FRIENDS_CHANNEL">My friends\' channels</string>
-    <!-- Channel category (Games) -->
+    <!-- Channel productCategory (Games) -->
     <string name="CATEGORY_GAMES">Games</string>
-    <!-- Channel category (History) -->
+    <!-- Channel productCategory (History) -->
     <string name="CATEGORY_HISTORY">History</string>
-    <!-- Channel category (My channels) -->
+    <!-- Channel productCategory (My channels) -->
     <string name="CATEGORY_MY_CHANNELS">My Channels</string>
-    <!-- Channel category (Nearby) -->
+    <!-- Channel productCategory (Nearby) -->
     <string name="CATEGORY_NEARBY">Nearby</string>
-    <!-- Channel category (News) -->
+    <!-- Channel productCategory (News) -->
     <string name="CATEGORY_NEWS">News</string>
-    <!-- Channel category (Nightlife) -->
+    <!-- Channel productCategory (Nightlife) -->
     <string name="CATEGORY_NIGHTLIFE">Nightlife</string>
-    <!-- Channel category (Search) -->
+    <!-- Channel productCategory (Search) -->
     <string name="CATEGORY_SEARCH">Search channels</string>
-    <!-- Channel category (Shopping) -->
+    <!-- Channel productCategory (Shopping) -->
     <string name="CATEGORY_SHOPPING">Shopping</string>
-    <!-- Channel category (Travel) -->
+    <!-- Channel productCategory (Travel) -->
     <string name="CATEGORY_TRAVEL">Travel</string>
     <!-- Text for channel search text field -->
     <string name="HNT_CHANNELS_SEARCH">Type in search terms</string>

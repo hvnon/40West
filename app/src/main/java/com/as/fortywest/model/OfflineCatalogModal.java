@@ -8,20 +8,23 @@ import android.os.Parcelable;
  */
 public class OfflineCatalogModal implements Parcelable {
     private int mId;
+    private int mImage;
     private String mName;
     private String mAssetName;
 
     public OfflineCatalogModal() {
     }
 
-    public OfflineCatalogModal(int id, String name, String assetName) {
+    public OfflineCatalogModal(int id, String name, String assetName, int image) {
         mId = id;
         mName = name;
         mAssetName = assetName;
+        mImage = image;
     }
 
     public OfflineCatalogModal(Parcel source) {
         mId = source.readInt();
+        mImage = source.readInt();
         mName = source.readString();
         mAssetName = source.readString();
     }
@@ -59,6 +62,7 @@ public class OfflineCatalogModal implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(mId);
+        dest.writeInt(mImage);
         dest.writeString(mName);
         dest.writeString(mAssetName);
     }
@@ -74,4 +78,12 @@ public class OfflineCatalogModal implements Parcelable {
             return new OfflineCatalogModal[size];
         }
     };
+
+    public int getmImage() {
+        return mImage;
+    }
+
+    public void setmImage(int mImage) {
+        this.mImage = mImage;
+    }
 }

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 
 import com.as.fortywest.R;
-import com.as.fortywest.model.DummyModel;
+import com.as.fortywest.dummy.DummyModel;
 import com.as.fortywest.util.ImageUtil;
 
 import java.util.List;

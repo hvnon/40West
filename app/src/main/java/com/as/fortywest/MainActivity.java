@@ -1,41 +1,43 @@
 package com.as.fortywest;
 
 import android.Manifest;
-import android.app.ActionBar;
-import android.content.Context;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.as.fortywest.adapter.DrawerAdapter;
-import com.as.fortywest.fragment.OfflineCatalogFragment;
 import com.as.fortywest.fragment.StoreLocatorFragment;
 import com.as.fortywest.model.DrawerItem;
-import com.as.fortywest.util.DummyContent;
+import com.as.fortywest.dummy.DummyContent;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.as.fortywest.app.CustomApplication;
+
 import java.util.List;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private List<DrawerItem> mDrawerItems;
     private ListView mDrawerList;
@@ -68,43 +70,40 @@ public class MainActivity extends ActionBarActivity {
         setSupportActionBar(toolbar);
 
         // Set Actionbar icon & title
-        android.support.v7.app.ActionBar ab = getSupportActionBar();
-        ab.setDisplayShowTitleEnabled(false);
-
-        mDrawerItems = DummyContent.getDrawerShopDummyList();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // Initial Drawer menu data
+        mDrawerItems = DummyContent.getDrawerShopDummyList();
         mTitle = mDrawerTitle = getTitle();
-
         mDrawerList = (ListView) findViewById(R.id.list_view);
-        mDrawerList.setAdapter(new DrawerAdapter(this, mDrawerItems, true));
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-        mDrawerList.setBackgroundResource(R.drawable.gradient_drawer_background_shop);
         mDrawerList.getLayoutParams().width = (int) getResources().getDimension(R.dimen.drawer_width);
-
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,
                 R.string.drawer_open, R.string.drawer_close) {
             public void onDrawerClosed(View view) {
                 getSupportActionBar().setTitle(mTitle);
-                invalidateOptionsMenu();
+                supportInvalidateOptionsMenu();
             }
 
             public void onDrawerOpened(View drawerView) {
                 getSupportActionBar().setTitle(mDrawerTitle);
-                invalidateOptionsMenu();
+                supportInvalidateOptionsMenu();
             }
         };
+
+        mDrawerToggle.setDrawerIndicatorEnabled(true);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+        mDrawerList.setAdapter(new DrawerAdapter(this, mDrawerItems, true));
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+
+        mHandler = new Handler();
 
         // Set Drawer state
         if (savedInstanceState == null) {
-            // Enable if application open Drawer by default
-            //mDrawerLayout.openDrawer(mDrawerList);
+            mDrawerLayout.openDrawer(mDrawerList);
         }
-
-        mHandler = new Handler();
     }
 
 
@@ -138,9 +137,19 @@ public class MainActivity extends ActionBarActivity {
 
         switch (item.getItemId()) {
             case R.id.action_help:
-                // TODO: Add code start the About Activity
-
-                return true;
+                TextView content = (TextView) getLayoutInflater().inflate(R.layout.about_view, null);
+                content.setMovementMethod(LinkMovementMethod.getInstance());
+                content.setText(Html.fromHtml(getString(R.string.about_body)));
+                new AlertDialog.Builder(this)
+                        .setTitle(R.string.about)
+                        .setView(content)
+                        .setInverseBackgroundForced(true)
+                        .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        }).create().show();
             default:
                 if (mDrawerToggle.onOptionsItemSelected(item)) {
                     return true;
@@ -160,6 +169,12 @@ public class MainActivity extends ActionBarActivity {
 
         // Specific the Activities Navigate
         switch (drawerTag) {
+            case DrawerItem.DRAWER_ITEM_TAG_ONLINE_CATEGORY:
+                launchOnlineCatalog(view);
+                break;
+            case DrawerItem.DRAWER_ITEM_TAG_OFFLINE_CATEGORY:
+                launchOfflineCatalogActivity(view);
+                break;
             case DrawerItem.DRAWER_ITEM_TAG_DEAL:
                 launchDealActivity(view);
                 break;
@@ -179,9 +194,12 @@ public class MainActivity extends ActionBarActivity {
 
     private Fragment getFragmentByDrawerTag(int drawerTag) {
         Fragment fragment;
-        if (drawerTag == DrawerItem.DRAWER_ITEM_TAG_OFFLINE_CATEGORY) {
-            fragment = OfflineCatalogFragment.newInstance();
-        } else if (drawerTag == DrawerItem.DRAWER_ITEM_TAG_STORE_FINDER) {
+//        if (drawerTag == DrawerItem.DRAWER_ITEM_TAG_OFFLINE_CATEGORY) {
+//            fragment = OfflineCatalogFragment.newInstance();
+//        } else if (drawerTag == DrawerItem.DRAWER_ITEM_TAG_ONLINE_CATEGORY) {
+//            fragment = OnlineCatalogFragment.newInstance();
+//        } else
+        if (drawerTag == DrawerItem.DRAWER_ITEM_TAG_STORE_FINDER) {
             fragment = StoreLocatorFragment.newInstance();
         } else {
             fragment = new Fragment();
@@ -270,8 +288,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void launchOfflineCatalogActivity(View v) {
-        Fragment fragment = getFragmentByDrawerTag(DrawerItem.DRAWER_ITEM_TAG_OFFLINE_CATEGORY);
-        commitFragment(fragment);
+        Intent intent = new Intent(this, ProductCatalogActivity.class);
+        intent.putExtra(ProductCatalogActivity.CATEGORY_TYPE, DrawerItem.DRAWER_ITEM_TAG_OFFLINE_CATEGORY);
+        startActivity(intent);
     }
 
     public void launchDealActivity(View v) {
@@ -281,6 +300,12 @@ public class MainActivity extends ActionBarActivity {
 
     public void launchStoreLocatorActivity(View v) {
         Intent intent = new Intent(this, StoreLocatorActivity.class);
+        startActivity(intent);
+    }
+
+    public void launchOnlineCatalog(View v) {
+        Intent intent = new Intent(this, ProductCatalogActivity.class);
+        intent.putExtra(ProductCatalogActivity.CATEGORY_TYPE, DrawerItem.DRAWER_ITEM_TAG_ONLINE_CATEGORY);
         startActivity(intent);
     }
 }

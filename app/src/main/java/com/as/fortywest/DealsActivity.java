@@ -21,12 +21,11 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBarActivity;
 import android.util.TypedValue;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.as.fortywest.adapter.GoogleCardsAdapter;
-import com.as.fortywest.util.DummyContent;
+import com.as.fortywest.dummy.DummyContent;
 import com.nhaarman.listviewanimations.appearance.simple.SwingBottomInAnimationAdapter;
 import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.OnDismissCallback;
 import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
@@ -44,7 +43,7 @@ public class DealsActivity extends ActionBarActivity implements
 		setContentView(R.layout.list_view);
 
 		ListView listView = (ListView) findViewById(R.id.list_view);
-		listView.setBackgroundColor(getResources().getColor(R.color.primary_light));
+		listView.setBackgroundColor(getResources().getColor(R.color.main_color_grey_200));
 
 		mGoogleCardsAdapter = new GoogleCardsAdapter(this,DummyContent.getDummyModelDragAndDropShopList());
 		SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(

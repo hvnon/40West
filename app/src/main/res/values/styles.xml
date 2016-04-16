@@ -1,25 +1,17 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="Theme.NoTitle" parent="@android:style/Theme.Light.NoTitleBar"></style>
-
-    <style name="AppTheme.Title" parent="Theme.AppCompat">
-        <item name="android:textColorPrimary">@android:color/white</item>
-    </style>
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="AsTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/main_color_500</item>
+        <item name="colorPrimaryDark">@color/main_color_700</item>
     </style>
 
     <!--Activity with ActionBar-->
@@ -33,9 +25,17 @@
         <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
-    <style name="AppTheme.NoShadow" parent="@style/AppTheme">
+    <style name="AsTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AsTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AsTheme.NoTitle" parent="@android:style/Theme.Light.NoTitleBar"/>
+    <style name="AsTheme.Title" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AsTheme.NoShadow" parent="@style/AsTheme">
+        <item name="android:windowActionBar">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionBarStyle">@style/ActionBarStyle.NoShadow</item>
+        <item name="actionBarStyle">@style/ActionBarStyle.NoShadow</item>
     </style>
 
     <style name="ActionBarStyle.NoShadow" parent="@style/ActionBarStyle">
@@ -43,15 +43,23 @@
         <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
     </style>
 
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:windowBackground">@color/main_color_grey_100</item>
+    </style>
+
     <!--Dashboard button style-->
     <style name="DashboardButton">
-        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:drawablePadding">1dp</item>
         <item name="android:textSize">14dp</item>
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/material_grey_700</item>
         <item name="android:background">@null</item>
         <item name="android:textAllCaps">false</item>
     </style>
@@ -60,7 +68,7 @@
     <style name="ListViewStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/main_color_200</item>
+        <item name="android:background">@color/main_color_grey_100</item>
         <item name="android:cacheColorHint">@android:color/transparent</item>
         <item name="android:choiceMode">singleChoice</item>
         <item name="android:divider">@android:color/transparent</item>
@@ -71,8 +79,8 @@
     <!-- Ripple related styles -->
     <style name="RippleStyle">
         <item name="rippleOverlay">true</item>
-        <item name="rippleColor">@color/main_color_300</item>
-        <item name="rippleColour">@color/main_color_300</item>
+        <item name="rippleColor">@color/material_orange_300</item>
+        <item name="rippleColour">@color/material_orange_300</item>
         <item name="rippleAlpha">0.7</item>
         <item name="rippleDimension">45dp</item>
         <item name="rippleHover">true</item>
@@ -96,4 +104,17 @@
         <item name="android:paddingRight">4dp</item>
         <item name="android:cropToPadding">true</item>
     </style>
+
+   <!-- <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/material_grey_700</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+    </style>-->
 </resources>

@@ -8,94 +8,141 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/main_color_grey_50"
     tools:context="com.as.fortywest.MainActivity"
     tools:showIn="@layout/activity_main">
     <!--  Offline Catalog Button -->
-    <Button
-        android:id="@+id/btn_offline_catalog"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_offline_catalog"
-        android:text="Offline Catalogs"
-        android:layout_width="wrap_content"
-        android:onClick="launchOfflineCatalogActivity"/>
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_offline_catalog"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_offline_catalog"
+            android:text="Offline Catalogs"
+            android:layout_width="wrap_content"
+            android:onClick="launchOfflineCatalogActivity"/>
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Online Catalog Button -->
-    <Button
-        android:id="@+id/btn_online_catalog"
-        style="@style/DashboardButton"
-        android:layout_width="wrap_content"
-        android:drawableTop="@drawable/ic_online_catalog"
-        android:text="Online Catalog" />
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_online_catalog"
+            style="@style/DashboardButton"
+            android:layout_width="wrap_content"
+            android:drawableTop="@drawable/ic_online_catalog"
+            android:text="Online Catalog"
+            android:onClick="launchOnlineCatalog"/>
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Deals Button -->
-    <Button
-        android:id="@+id/btn_deals"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_deal"
-        android:text="Deals"
-        android:onClick="launchDealActivity"/>
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_deals"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_deal"
+            android:text="Deals"
+            android:onClick="launchDealActivity"/>
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Scan QR Button -->
-    <Button
-        android:id="@+id/btn_scan_qr"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_scan_ar"
-        android:text="Scan QR"
-        android:onClick="launchQRScanActivity"
-        />
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_scan_qr"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_technology"
+            android:text="Scan QR"
+            android:onClick="launchQRScanActivity"
+            />
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  StoreModel Finder Button -->
-    <Button
-        android:id="@+id/btn_store_finder"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_store_finder"
-        android:text="Store Finder"
-        android:onClick="launchStoreLocatorActivity"/>
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_store_finder"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_store_finder"
+            android:text="Store Finder"
+            android:onClick="launchStoreLocatorActivity"/>
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Assistance Button -->
-    <Button
-        android:id="@+id/btn_assistance"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_assistance"
-        android:text="Assistance" />
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_assistance"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_assistance"
+            android:text="Assistance" />
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Saved AR Button -->
-    <Button
-        android:id="@+id/btn_save_ar"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_supermarket"
-        android:text="Saved AR"
-        android:onClick="launchSavedARActivity"/>
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_save_ar"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_save_ar"
+            android:text="Saved AR"
+            android:onClick="launchSavedARActivity"/>
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Favourites Button -->
-    <Button
-        android:id="@+id/btn_favourites"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_bookmark_button"
-        android:text="Favourites" />
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_favourites"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_bookmark"
+            android:text="Favourites" />
+    </com.as.fortywest.view.MaterialRippleLayout>
 
     <!--  Cart Button -->
-    <Button
-        android:id="@+id/btn_cart"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/ic_shopping_cart"
-        android:text="Cart" />
+    <com.as.fortywest.view.MaterialRippleLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        style="@style/RippleStyle"
+        android:background="@drawable/selector_background_empty">
+        <Button
+            android:id="@+id/btn_cart"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/ic_shopping_cart"
+            android:text="Cart" />
+    </com.as.fortywest.view.MaterialRippleLayout>
 </com.as.fortywest.view.DashboardLayout>
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.as.fortywest.MainActivity"
-    tools:showIn="@layout/activity_main">
-    &lt;!&ndash;<ImageView
-        android:id="@+id/home_banner"
-        android:layout_height="150dp"
-        android:layout_width="match_parent"
-        android:layout_marginTop="-16dp"
-        android:layout_marginLeft="-16dp"
-        android:layout_marginRight="-16dp"
-        android:src="@drawable/home_banner"/>&ndash;&gt;
-
-</RelativeLayout>-->

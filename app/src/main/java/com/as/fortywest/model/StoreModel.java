@@ -18,13 +18,14 @@ public class StoreModel implements Parcelable{
     private String mAddress;
     private String mPhone;
     private String mEmail;
+    private int mImage;
     private List<StoreOpenHour> mWeek;
 
     public StoreModel() {
         mWeek = new ArrayList<StoreOpenHour>();
     }
 
-    public StoreModel(int id, String name, String distance, String postalCode, String address, String phone, String email, List<StoreOpenHour> week) {
+    public StoreModel(int id, String name, String distance, String postalCode, String address, String phone, String email, int image, List<StoreOpenHour> week) {
         mId = id;
         setName(name);
         setDistance(distance);
@@ -33,6 +34,7 @@ public class StoreModel implements Parcelable{
         setWeek(week);
         setPhone(phone);
         setEmail(email);
+        setImage(image);
     }
 
     protected StoreModel(Parcel in) {
@@ -137,6 +139,14 @@ public class StoreModel implements Parcelable{
 
     public void setEmail(String mEmail) {
         this.mEmail = mEmail;
+    }
+
+    public int getImage() {
+        return mImage;
+    }
+
+    public void setImage(int mImage) {
+        this.mImage = mImage;
     }
 }
 
