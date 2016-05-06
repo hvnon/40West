@@ -92,6 +92,30 @@ public class DummyContent {
         return imageGallerySubcategoryModels;
     }
 
+    public static ArrayList<ARImageGalleryModel> getImageGalleryProduct() {
+        ArrayList<ARImageGalleryModel> imageGallerySubcategoryModels = new ArrayList<ARImageGalleryModel>();
+
+        ARImageGalleryModel imageGallerySubcategoryModel = new ARImageGalleryModel();
+        imageGallerySubcategoryModel.setId(0L);
+        imageGallerySubcategoryModel.setTitle("Pic 1");
+        imageGallerySubcategoryModel.setUrl("http://res-4.cloudinary.com/made-com/image/upload/c_pad,dpr_1.0,f_auto,h_395,q_90,w_750/ritchie_3seater_scuba_blue_lb6.jpg");
+        imageGallerySubcategoryModels.add(imageGallerySubcategoryModel);
+
+        imageGallerySubcategoryModel = new ARImageGalleryModel();
+        imageGallerySubcategoryModel.setId(1L);
+        imageGallerySubcategoryModel.setTitle("Pic 2");
+        imageGallerySubcategoryModel.setUrl("http://res-3.cloudinary.com/made-com/image/upload/c_pad,dpr_1.0,f_auto,h_500,q_90,w_965/ritchie_3seater_scuba_blue_lb_1.jpg");
+        imageGallerySubcategoryModels.add(imageGallerySubcategoryModel);
+
+        imageGallerySubcategoryModel = new ARImageGalleryModel();
+        imageGallerySubcategoryModel.setId(2L);
+        imageGallerySubcategoryModel.setTitle("Pic 3");
+        imageGallerySubcategoryModel.setUrl("http://res-4.cloudinary.com/made-com/image/upload/c_pad,dpr_1.0,f_auto,h_395,q_90,w_750/ritchie_3seater_scuba_blue_lb3.jpg");
+        imageGallerySubcategoryModels.add(imageGallerySubcategoryModel);
+
+        return imageGallerySubcategoryModels;
+    }
+
     public static ArrayList<DummyModel> getDummyModelDragAndDropShopList() {
         ArrayList<DummyModel> list = new ArrayList<>();
 
@@ -122,8 +146,8 @@ public class DummyContent {
         ArrayList<OfflineCatalogModal> returnList = new ArrayList<>();
 
         returnList.add(new OfflineCatalogModal(0, "Herman Miller Thrive Portfolio Catalog", "Herman_Miller_Thrive_Portfolio_Catalog.pdf", R.drawable.offline_catalog_herman));
-        returnList.add(new OfflineCatalogModal(1, "IKEA Catalogue English 2016", "ikea_catalogue_en.pdf", R.drawable.offline_catalog_ikea_2016));
-        returnList.add(new OfflineCatalogModal(2, "IKEA Catalogue English 2015", "ikea_catalogue_en.pdf", R.drawable.offline_catalog_ikea_2016));
+        returnList.add(new OfflineCatalogModal(1, "IKEA Catalogue English 2016", "Herman_Miller_Thrive_Portfolio_Catalog.pdf", R.drawable.offline_catalog_ikea_2016));
+        returnList.add(new OfflineCatalogModal(2, "IKEA Catalogue English 2015", "Herman_Miller_Thrive_Portfolio_Catalog.pdf", R.drawable.offline_catalog_ikea_2016));
         return returnList;
 
     }
@@ -194,5 +218,21 @@ public class DummyContent {
             return null;
         }
         return json;
+    }
+
+    public static String loadHtmlFromAsset(Context mContext, String htmlFilePath) {
+        String html = null;
+        try {
+            InputStream is = mContext.getAssets().open(htmlFilePath);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            html = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return html;
     }
 }

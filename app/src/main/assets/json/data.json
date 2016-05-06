@@ -2,7 +2,15 @@
    "results":[
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£599.00",
+         "productid":123473,
+         "description":"Ritchie 3 Seater Sofa, Scuba Blue \n\nAssembly: Legs to be fitted \nInstructions Included: Yes \nCover Type: Fixed \nSuspension: Webbing\nNumber of Seats: 3 seater\nLegs Finish: Rubber wood, black\nMaterial: Composite \/ Mixed Fabric\nFoam Type: Polyethylene\nFoam Specification: Seat - 35kg\/m3. Back 25kg\/m3\nFilling: Foam\nFabric Composition: 100% Polyester\nCare: Professional care only\nWeight: 38kg\n",
+         "name":"Ritchie",
+         "url":"http:\/\/res-3.cloudinary.com\/made-com\/image\/upload\/c_pad,dpr_1.0,f_auto,h_500,q_90,w_965\/ritchie_3seater_scuba_blue_lb_1.jpg"
+      },
+      {
+         "category":"livingroom",
+         "price":"£149.99",
          "productid":123458,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Beddinge",
@@ -10,7 +18,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$14.99",
+         "price":"£14.99",
          "productid":123460,
          "description":"- The cover is easy to keep clean as it is removable.\n- Tailored cover in durable polyester with a soft, velvety feel and fine details such as piping and pleats. 100 % polyester",
          "name":"Stocksund",
@@ -18,7 +26,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$349.99",
+         "price":"£349.99",
          "productid":123461,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Ikea Black Sofa",
@@ -26,7 +34,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123463,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Karlstad",
@@ -34,7 +42,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123464,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Table brown",
@@ -42,7 +50,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123465,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Round Table Black",
@@ -50,7 +58,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123466,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Round Leather Table",
@@ -58,7 +66,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123467,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Table set",
@@ -66,7 +74,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123468,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Table drawer",
@@ -74,7 +82,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123469,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Organizational Shelf",
@@ -82,7 +90,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123470,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Sofared",
@@ -90,7 +98,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123471,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Wooden Cabinet Mahagony",
@@ -98,7 +106,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123472,
          "description":"Product dimensions\nWidth: 30 3\/4\nDepth: 15 \nHeight: 79 7\/8 \nMax load\/shelf: 33 lb\n\nWidth: 78 cm\nDepth: 38 cm\nHeight: 203 cm\nMax load\/shelf: 15 kg\n\nThis product requires assembly",
          "name":"Mostorpik",
@@ -106,7 +114,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$59.99",
+         "price":"£59.99",
          "productid":123457,
          "description":"Chair cushion:\nSeat\/ Back: Polyurethane foam 2.2 lb\/cu.ft., Polyester wadding, 100 % polypropylene\nHead rest: Polyurethane foam., Polyester wadding, Non-woven polyester fabric\nTotal composition: 53 % cotton, 47 % polyester\n\nChair frame:\nTotal composition: 100 % polypropylene\nFrame: Molded layer-glued wood veneer with surface of, Birch veneer, Clear acrylic lacquer",
          "name":"Poang",
@@ -114,7 +122,7 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123459,
          "description":"Sofa frame:\nBack and seat frame: Fiberboard, Moisture resistant particleboard, Plywood, Solid pine, Polyurethane foam 1.2 lb\/cu.ft.\nArmrest: Hollow fiber polyester wadding, Solid pine, Fiberboard, Moisture resistant particleboard, Cardboard, Polyurethane foam 1.2 lb\/cu.ft., Polyurethane foam 1.5 lb\/cu.ft.\nSeat cushion: Non-woven polypropylene, High-resilience polyurethane foam (cold foam) 2.2 lb\/cu.ft., Polyester fiber balls\nBack cushion: Hollow polyester fibers, Non-woven polypropylene Sofa cover:100 % cotton",
          "name":"Ektorp",
@@ -122,19 +130,11 @@
       },
       {
          "category":"livingroom",
-         "price":"$149.99",
+         "price":"£149.99",
          "productid":123462,
          "description":"Sofa frame:\nBack and seat frame: Fiberboard, Moisture resistant particleboard, Plywood, Solid wood\nArmrest frame: Solid wood, Fiberboard, Moisture resistant particleboard, Plywood\nSeat cushion: High-resilience polyurethane foam (cold foam) 2.2 lb\/cu.ft., Polyurethane memory foam 3.1 lb\/cu.ft, Polyester wadding\nBack cushion: Polyester fiber balls Sofa cover:80 % cotton, 20 % polyester",
          "name":"kivik",
          "url":"http:\/\/res.cloudinary.com\/cmpe295b\/image\/upload\/c_fit,h_500,w_500\/kivik.PNG"
-      },
-      {
-         "category":"livingroom",
-         "price":"$599.00",
-         "productid":123473,
-         "description":"Ritchie 3 Seater Sofa, Scuba Blue \n\nAssembly: Legs to be fitted \nInstructions Included: Yes \nCover Type: Fixed \nSuspension: Webbing\nNumber of Seats: 3 seater\nLegs Finish: Rubber wood, black\nMaterial: Composite \/ Mixed Fabric\nFoam Type: Polyethylene\nFoam Specification: Seat - 35kg\/m3. Back 25kg\/m3\nFilling: Foam\nFabric Composition: 100% Polyester\nCare: Professional care only\nWeight: 38kg\n",
-         "name":"Ritchie",
-         "url":"http:\/\/res-3.cloudinary.com\/made-com\/image\/upload\/c_pad,dpr_1.0,f_auto,h_500,q_90,w_965\/ritchie_3seater_scuba_blue_lb_1.jpg"
       }
    ],
    "total_results_count":0,

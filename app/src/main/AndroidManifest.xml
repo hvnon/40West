@@ -7,13 +7,12 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <!-- This is only required for Cloud or Visual Search applications -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -32,24 +31,27 @@
 
     <!-- Camera is always required -->
     <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
         android:name="android.hardware.camera.any"
         android:required="true" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
-        android:required="false" />
+        android:required="true" />
 
     <!-- Only required for location based applications -->
     <uses-feature
         android:name="android.hardware.location"
-        android:required="false" />
+        android:required="true" />
 
     <!-- Only required by tracking types such as SLAM, GPSCompass etc.. -->
     <uses-feature
         android:name="android.hardware.sensor.accelerometer"
-        android:required="false" />
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.sensor.compass"
-        android:required="false" />
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.sensor.gyroscope"
         android:required="false" />
@@ -109,6 +111,11 @@
         <activity
             android:name=".ProductViewActivity"
             android:label="@string/product_view_activity" />
+        <activity
+            android:name=".AugmentedActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/augmented_activity" >
+        </activity>
     </application>
 
 </manifest>

@@ -69,14 +69,17 @@ public class ProductGalleryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_product_gallery, container, false);
 
+        gridView = (GridView) v.findViewById(R.id.gridViewProducts);
+
         setHasOptionsMenu(true);
         this.setRetainInstance(true);
 
         // Set title bar
         ((ProductCatalogActivity) getActivity())
-                .setActionBarTitle(getActionBarTitle(getSelectedCatalogCode()));
+                .setActionBarTitle(getActionBarTitle( getSelectedCatalogCode()));
 
         new GalleryAsynTask().execute();
+
         return v;
     }
 
@@ -172,7 +175,6 @@ public class ProductGalleryFragment extends Fragment {
         protected void onPostExecute(String result) {
             LOGI(TAG, "onPostExecute");
             if (resultSize > 0) {
-                gridView = (GridView) getView().findViewById(R.id.gridViewProducts);
                 gridAdapter = new ProductGridAdapter(getActivity(), R.layout.grid_item_product, products);
                 gridView.setAdapter(gridAdapter);
                 gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

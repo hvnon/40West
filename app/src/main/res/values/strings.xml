@@ -104,6 +104,7 @@
     <string name="store_finder_activity">Store Finder</string>
     <string name="store_detail_activity">Store Details</string>
     <string name="product_view_activity">Product Details</string>
+    <string name="augmented_activity">Augmented Reality</string>
 
     <!--About-->
     <string name="about">About</string>
@@ -151,4 +152,7 @@
     <string name="product_view_tab_info">Information</string>
     <string name="product_view_tab_spec">Specification</string>
     <string name="product_view_tab_gallery">Gallery</string>
+    <string name="action_chooseAnother">Choose Another</string>
+    <string name="action_snapShot">Share Snapshot</string>
+    <string name="action_snaptoscreen">Snap To Screen</string>
 </resources>

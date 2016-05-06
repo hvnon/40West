@@ -2,6 +2,7 @@ package com.as.fortywest;
 
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
@@ -10,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.as.fortywest.fragment.ProductViewTabGalleryFragment;
 import com.as.fortywest.fragment.ProductViewTabInfoFragment;
@@ -119,20 +121,69 @@ public class ProductViewActivity extends AppCompatActivity implements ActionBar.
         ImageView rlIcon4 = new ImageView(this);
         ImageView rlIcon5 = new ImageView(this);
 
-        rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_grade));
-        rlIcon2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_store));
-        rlIcon3.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_vr));
-        rlIcon4.setImageDrawable(getResources().getDrawable(R.drawable.ic_social_party_mode));
+        rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_action_star_rate));
+        rlIcon2.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_action_store));
+        rlIcon3.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_action_3d_rotation));
+        rlIcon4.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_social_party_mode));
         rlIcon5.setImageDrawable(getResources().getDrawable(R.drawable.ic_action_add_shopping_cart));
+
+        SubActionButton subActionFavorite = rLSubBuilder.setContentView(rlIcon1).build();
+        SubActionButton subActionShop = rLSubBuilder.setContentView(rlIcon2).build();
+        SubActionButton subActionVR = rLSubBuilder.setContentView(rlIcon3).build();
+        SubActionButton subActionAR = rLSubBuilder.setContentView(rlIcon4).build();
+        SubActionButton subActionCart = rLSubBuilder.setContentView(rlIcon5).build();
+
+        subActionFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Favourite clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        subActionShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Store clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        subActionVR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "VR clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        subActionAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "AR clicked", Toast.LENGTH_SHORT).show();
+                String[] imageLocations = new String[0];
+                Intent theIntent = new Intent (getApplication(), AugmentedActivity.class);
+                theIntent.putExtra("MarkerPresent", "NO");
+                theIntent.putExtra("ImagePath", product.getImage());
+                theIntent.putExtra("productid",product.getId());
+                theIntent.putExtra("PastTransaction",imageLocations );
+                startActivity(theIntent);
+            }
+        });
+
+        subActionCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Cart clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         // Build the menu with default options: light theme, 90 degrees, 72dp radius.
         // Set 4 default SubActionButtons
         final FloatingActionMenu rightLowerMenu = new FloatingActionMenu.Builder(this)
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon1).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon2).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon3).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon4).build())
-                .addSubActionView(rLSubBuilder.setContentView(rlIcon5).build())
+                .addSubActionView(subActionFavorite)
+                .addSubActionView(subActionShop)
+                .addSubActionView(subActionVR)
+                .addSubActionView(subActionAR)
+                .addSubActionView(subActionCart)
                 .attachTo(rightLowerButton)
                 .build();
 

@@ -9,12 +9,19 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.as.fortywest.R;
+import com.as.fortywest.adapter.ARImageGalleryAdapter;
+import com.as.fortywest.dummy.DummyContent;
+import com.as.fortywest.model.ARImageGalleryModel;
 import com.as.fortywest.model.Product;
 import com.as.fortywest.util.ImageUtil;
+
+import java.util.ArrayList;
 
 import static com.as.fortywest.util.LogUtils.makeLogTag;
 
@@ -22,10 +29,9 @@ import static com.as.fortywest.util.LogUtils.makeLogTag;
 public class ProductViewTabGalleryFragment extends ProductBaseFragment {
     private static final String TAG = makeLogTag(ProductViewTabGalleryFragment.class);
     private Product mProduct;
-    private ImageView productImage;
-    private TextView nameTextView;
-    private TextView priceTextView;
-    private TextView descriptionTextView;
+    private ArrayList<ARImageGalleryModel> mSubcategories;
+    private ListView mListView;
+    private boolean mIsLayoutOnTop = true;
 
     public static ProductViewTabGalleryFragment newInstance(Product product) {
         ProductViewTabGalleryFragment f = new ProductViewTabGalleryFragment();
@@ -44,27 +50,36 @@ public class ProductViewTabGalleryFragment extends ProductBaseFragment {
 
     @Override
     protected int getFragmentLayout() {
-        return R.layout.fragment_product_view_tab_info;
+        return R.layout.list_view;
     }
 
     @SuppressLint("InflateParams")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_product_view_tab_info, container, false);
+        View root = inflater.inflate(R.layout.list_view, container, false);
 
-        productImage = (ImageView) root.findViewById(R.id.product_image);
-        nameTextView = (TextView) root.findViewById(R.id.product_name);
-        priceTextView = (TextView) root.findViewById(R.id.product_price);
-        descriptionTextView = (TextView) root.findViewById(R.id.product_description);
+        mListView = (ListView) root.findViewById(R.id.list_view);
+        // mSubcategories = DummyContent.getImageGalleryProduct();
 
         if(getSelectedProduct() != null){
             Product product = getSelectedProduct();
-            ImageUtil.displayImage(productImage, product.getImage(), null);
-            nameTextView.setText(product.getName());
-            priceTextView.setText(product.getPrice());
-            descriptionTextView.setText(product.getDescription());
+
+            mSubcategories = new ArrayList<ARImageGalleryModel>();
+
+            ARImageGalleryModel imageGallerySubcategoryModel = new ARImageGalleryModel();
+            imageGallerySubcategoryModel.setId(4L);
+            imageGallerySubcategoryModel.setTitle("Picture 1");
+            imageGallerySubcategoryModel.setUrl(product.getImage());
+            mSubcategories.add(imageGallerySubcategoryModel);
+
+            setAdapter();
         }
         return root;
+    }
+
+    private void setAdapter() {
+        BaseAdapter adapter = new ARImageGalleryAdapter(getContext(), mSubcategories, mIsLayoutOnTop);
+        mListView.setAdapter(adapter);
     }
 
 

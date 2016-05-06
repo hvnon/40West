@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.as.fortywest"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -13,13 +13,13 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/LivingRoomGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/LivingRoomGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -46,13 +46,13 @@
                 </LinearLayout>
             </com.as.fortywest.view.MaterialRippleLayout>
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/DiningRoomGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/DiningRoomGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -86,13 +86,13 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/BedroomGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/BedroomGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -119,13 +119,13 @@
                 </LinearLayout>
             </com.as.fortywest.view.MaterialRippleLayout>
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/HomeOfficeGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/HomeOfficeGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -159,13 +159,13 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/HomeDecorGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/HomeDecorGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -192,13 +192,13 @@
                 </LinearLayout>
             </com.as.fortywest.view.MaterialRippleLayout>
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/KitchenGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/KitchenGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -232,13 +232,13 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/KidsGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/KidsGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"
@@ -263,13 +263,13 @@
                 </LinearLayout>
             </com.as.fortywest.view.MaterialRippleLayout>
             <com.as.fortywest.view.MaterialRippleLayout
-                android:id="@+id/MiscGalleryButton"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:layout_weight="0.5"
                 style="@style/RippleStyle"
                 android:background="@drawable/selector_background_empty_custom">
                 <LinearLayout
+                    android:id="@+id/MiscGalleryButton"
                     android:layout_height="fill_parent"
                     android:layout_width="fill_parent"
                     android:layout_weight="1"

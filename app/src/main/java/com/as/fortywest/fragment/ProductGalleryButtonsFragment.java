@@ -2,30 +2,32 @@ package com.as.fortywest.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.as.fortywest.ProductCatalogActivity;
 import com.as.fortywest.R;
 import com.as.fortywest.util.ImageUtil;
-import com.as.fortywest.view.MaterialRippleLayout;
 
 import static com.as.fortywest.util.LogUtils.LOGI;
 
 public class ProductGalleryButtonsFragment extends Fragment implements View.OnClickListener {
 
-    MaterialRippleLayout livingRoom;
-    MaterialRippleLayout diningRoom;
-    MaterialRippleLayout kitchen;
-    MaterialRippleLayout bedroom;
-    MaterialRippleLayout misc;
-    MaterialRippleLayout kids;
-    MaterialRippleLayout homeDecor;
-    MaterialRippleLayout homeOffice;
+    LinearLayout livingRoom;
+    LinearLayout diningRoom;
+    LinearLayout kitchen;
+    LinearLayout bedroom;
+    LinearLayout misc;
+    LinearLayout kids;
+    LinearLayout homeDecor;
+    LinearLayout homeOffice;
 
     View v;
     String category = "";
@@ -50,14 +52,14 @@ public class ProductGalleryButtonsFragment extends Fragment implements View.OnCl
 
 
         // add more listeners here when more buttons are added
-        livingRoom = (MaterialRippleLayout) v.findViewById(R.id.LivingRoomGalleryButton);
-        diningRoom = (MaterialRippleLayout) v.findViewById(R.id.DiningRoomGalleryButton);
-        kitchen = (MaterialRippleLayout) v.findViewById(R.id.KitchenGalleryButton);
-        bedroom = (MaterialRippleLayout) v.findViewById(R.id.BedroomGalleryButton);
-        misc = (MaterialRippleLayout) v.findViewById(R.id.MiscGalleryButton);
-        kids = (MaterialRippleLayout) v.findViewById(R.id.KidsGalleryButton);
-        homeDecor = (MaterialRippleLayout) v.findViewById(R.id.HomeDecorGalleryButton);
-        homeOffice = (MaterialRippleLayout) v.findViewById(R.id.HomeOfficeGalleryButton);
+        livingRoom = (LinearLayout) v.findViewById(R.id.LivingRoomGalleryButton);
+        diningRoom = (LinearLayout) v.findViewById(R.id.DiningRoomGalleryButton);
+        kitchen = (LinearLayout) v.findViewById(R.id.KitchenGalleryButton);
+        bedroom = (LinearLayout) v.findViewById(R.id.BedroomGalleryButton);
+        misc = (LinearLayout) v.findViewById(R.id.MiscGalleryButton);
+        kids = (LinearLayout) v.findViewById(R.id.KidsGalleryButton);
+        homeDecor = (LinearLayout) v.findViewById(R.id.HomeDecorGalleryButton);
+        homeOffice = (LinearLayout) v.findViewById(R.id.HomeOfficeGalleryButton);
 
         livingRoom.setOnClickListener(this);
         diningRoom.setOnClickListener(this);
@@ -122,10 +124,14 @@ public class ProductGalleryButtonsFragment extends Fragment implements View.OnCl
         }
 
         ProductGalleryFragment sgf = ProductGalleryFragment.newInstance(category);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.online_placeholder, sgf)
-                .addToBackStack(backStack)
-                .commit();
+        FragmentManager sfm = getFragmentManager();
+        FragmentTransaction sft = sfm.beginTransaction();
+        sft.replace(R.id.online_placeholder, sgf);
+
+        if(backStack != ""){
+            sft.addToBackStack(backStack);
+        }
+        sft.commit();
     }
 
 

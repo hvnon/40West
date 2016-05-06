@@ -5,15 +5,10 @@
     <file url="file://$PROJECT_DIR$/app/src/main/assets/Herman_Miller_Thrive_Portfolio_Catalog.pdf" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/assets/ikea_catalogue_en.pdf" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/assets/licenses.html" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/product_spec.html" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/as/fortywest/ui/widget/MultiSwipeRefreshLayout.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/as/fortywest/util/AboutUtils.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/as/fortywest/util/LogUtils.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/button_action_blue.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/button_action_blue_selector.xml" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/button_action_blue_touch.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/button_action_red.png" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/button_action_red_selector.xml" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/button_action_red_touch.png" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/button_chair.xml" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/button_chair_selected.png" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/button_chair_unselected.png" charset="windows-1252" />
@@ -30,6 +25,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/arel.xml" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_product_tab_view.xml" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_product_view_tab_info.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_product_view_tab_spec.xml" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/values/theme.xml" charset="windows-1252" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

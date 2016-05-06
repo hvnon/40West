@@ -4,17 +4,18 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.as.fortywest.fragment.OfflineCatalogFragment;
-import com.as.fortywest.fragment.OnlineCatalogFragment;
 import com.as.fortywest.fragment.ProductGalleryButtonsFragment;
 import com.as.fortywest.model.DrawerItem;
 
-public class ProductCatalogActivity extends ActionBarActivity {
+public class ProductCatalogActivity extends AppCompatActivity {
     public static String CATEGORY_TYPE = "CategoryType";
     private Handler mHandler;
 

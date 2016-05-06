@@ -12,12 +12,12 @@
         "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-xxhdpi\\web_back_dis.png"
     },
     {
-        "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\web_stop.png",
-        "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-xxhdpi\\web_stop.png"
-    },
-    {
         "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\web_close.png",
         "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-xxhdpi\\web_close.png"
+    },
+    {
+        "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\web_stop.png",
+        "source": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\res\\drawable-xxhdpi\\web_stop.png"
     },
     {
         "merged": "D:\\WorkSpace\\001.Fusionwerx\\AR\\40West\\FortyWest\\MetaioSDK\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\web_forward_dis.png",
